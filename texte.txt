@@ -1,0 +1,46 @@
+pip install  flask
+
+python -m pip install --upgrade pip
+
+pip install  flask-wtf
+
+pip install  flask-uploads
+
+
+
+pip install -U Werkzeug==2.0.1
+
+In flask_uploads.py
+
+Change
+
+from werkzeug import secure_filename,FileStorage
+to
+
+from werkzeug.utils import secure_filename
+from werkzeug.datastructures import  FileStorage
+
+
+
+
+
+
+
+##########################################################
+
+
+rotas dos admins
+
+
+
+/addmarcas 
+/addcat
+/addproduto
+
+/admin
+/marcas
+/categoria
+
+/updatemarcas/<int:id>
+/updatecat/<int:id>
+/updateproduto/<int:id>
